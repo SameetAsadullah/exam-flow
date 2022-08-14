@@ -5,19 +5,19 @@
 
 ### Working Screenshots
 <div align="center">
-  <img src = "https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/extras/working-ss-1.jpg" alt = "" width="700px"/>
+  <img src = "https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/extras/working-ss-1.jpg" alt = "" width="800px"/>
 </div>
 <br/>
 <div align="center">
-  <img src = "https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/extras/working-ss-2.jpg" alt = "" width="700px"/>
+  <img src = "https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/extras/working-ss-2.jpg" alt = "" width="800px"/>
 </div>
 <br/>
 <div align="center">
-  <img src = "https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/extras/working-ss-3.jpg" alt = "" width="700px"/>
+  <img src = "https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/extras/working-ss-3.jpg" alt = "" width="800px"/>
 </div>
 <br/>
 <div align="center">
-  <img src = "https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/extras/working-ss-4.jpg" alt = "" width="700px"/>
+  <img src = "https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/extras/working-ss-4.jpg" alt = "" width="800px"/>
 </div>
 
 ### Contributors
