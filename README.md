@@ -1,7 +1,7 @@
 <h1 align="center">Exams Schedule Generator Using Genetic Algorithm</h1>
 
 ### Description
-`Python Program` to find generic solution that will facilitate generating `Exams Schedule` for university using `Genetic Algorithm`. Detailed `Project Description` can be found [Here](https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/Project%20Statement.pdf). .Detailed `Report` can be found [Here](https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/Report.pdf).
+`Python Program` to find generic solution that will facilitate generating `Exams Schedule` for university using `Genetic Algorithm`. Detailed `Project Description` can be found [Here](https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/Project%20Statement.pdf). Detailed `Report` can be found [Here](https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/Report.pdf).
 
 ### Hard Constraints
 - An exam will be scheduled for each course.
