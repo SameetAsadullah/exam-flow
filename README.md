@@ -17,7 +17,7 @@ A constraint-based university exam scheduler implemented in Python. The project 
 - Multi-room allocation based on enrollment size.
 - Human-readable output of the best discovered timetable.
 
-See [Algorithm design](docs/ALGORITHM.md) for the search model. The original [project statement](Project%20Statement.pdf) and [report](Report.pdf) are also retained.
+See [Algorithm design](docs/ALGORITHM.md) for the search model. The supporting [problem specification](Project%20Statement.pdf) and [report](Report.pdf) are also available.
 
 ## Scheduling constraints
 
