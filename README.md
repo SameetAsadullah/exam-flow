@@ -4,7 +4,7 @@ A constraint-based university exam scheduler implemented in Python. The project 
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/interface-Jupyter-F37626?logo=jupyter&logoColor=white)
-![Checks](https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/actions/workflows/quality.yml/badge.svg)
+![Checks](https://github.com/SameetAsadullah/genetic-exam-scheduler/actions/workflows/quality.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 ## What it demonstrates
