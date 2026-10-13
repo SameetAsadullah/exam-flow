@@ -1,39 +1,80 @@
-<h1 align="center">Exams Schedule Generator Using Genetic Algorithm</h1>
+# Exam Timetable Generator using a Genetic Algorithm
 
-### Description
-`Python Program` to find generic solution that will facilitate generating `Exams Schedule` for university using `Genetic Algorithm`. Detailed `Project Description` can be found [Here](https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/Project%20Statement.pdf). Detailed `Report` can be found [Here](https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/Report.pdf).
+A constraint-based university exam scheduler implemented in Python. The project evolves candidate timetables against student, room, invigilator, and ordering constraints using selection, crossover, mutation, and fitness scoring.
 
-### Hard Constraints
-- An exam will be scheduled for each course.
-- A student is enrolled in at least 3 courses. A student cannot give more than 1 exam at a time.
-- Exam will not be held on weekends.
-- Each exam must be held between 9 am and 5 pm
-- Each exam must be invigilated by a teacher. A teacher cannot invigilate two exams at the same time.
-- A teacher cannot invigilate two exams in a row.
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/interface-Jupyter-F37626?logo=jupyter&logoColor=white)
+![Checks](https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/actions/workflows/quality.yml/badge.svg)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-### Soft Constraints
-- All students and teachers shall be given a break on Friday from 1-2.
-- A student shall not give more than 1 exam consecutively.
-- If a student is enrolled in a MG course and a CS course, it is preferred that their MG course exam be held before their CS course exam.
-- Two hours of break in the week such that at least half the faculty is free in one slot and the rest of the faculty is free in the other slot so the faculty meetings shall be held in parts as they are now.
+## What it demonstrates
 
-### Working Screenshots
-<div align="center">
-  <img src = "https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/extras/working-ss-1.jpg" alt = "" width="800px"/>
-</div>
-<br/>
-<div align="center">
-  <img src = "https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/extras/working-ss-2.jpg" alt = "" width="800px"/>
-</div>
-<br/>
-<div align="center">
-  <img src = "https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/extras/working-ss-3.jpg" alt = "" width="800px"/>
-</div>
-<br/>
-<div align="center">
-  <img src = "https://github.com/SameetAsadullah/Exams-Schedule-Generator-Using-Genetic-Algorithm/blob/main/extras/working-ss-4.jpg" alt = "" width="800px"/>
-</div>
+- Chromosome-based timetable representation.
+- Random population generation from real CSV inputs.
+- Fitness evaluation for scheduling conflicts.
+- Roulette-wheel selection.
+- Crossover and mutation of candidate schedules.
+- Multi-room allocation based on enrollment size.
+- Human-readable output of the best discovered timetable.
 
-### Contributors
+See [Algorithm design](docs/ALGORITHM.md) for the search model. The original [project statement](Project%20Statement.pdf) and [report](Report.pdf) are also retained.
+
+## Scheduling constraints
+
+### Hard constraints
+
+- Every course receives an exam.
+- A student cannot sit more than one exam at the same time.
+- Exams run on weekdays between 9:00 AM and 5:00 PM.
+- Rooms cannot host overlapping exams.
+- Each exam room has an assigned invigilator.
+- An invigilator cannot supervise simultaneous exams.
+
+### Optimization preferences
+
+- Avoid consecutive exams for students and invigilators.
+- Preserve the Friday 1:00–2:00 PM break.
+- Prefer management exams before computer-science exams for affected students.
+- Leave shared faculty meeting slots where possible.
+
+## Dataset
+
+The `src` directory contains the notebook and its inputs:
+
+| File | Purpose |
+| --- | --- |
+| `courses.csv` | Course codes and names |
+| `teachers.csv` | Available invigilators |
+| `studentNames.csv` | Student records |
+| `studentCourse.csv` | Course registrations |
+
+## Run locally
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cd src
+jupyter lab main.ipynb
+```
+
+Run the notebook cells in order. The algorithm is stochastic, so convergence time and the resulting timetable can differ between executions.
+
+## Screenshots
+
+| Evolution progress | Generated timetable |
+| --- | --- |
+| ![Genetic algorithm progress](extras/working-ss-1.jpg) | ![Generated exam timetable](extras/working-ss-2.jpg) |
+
+| Schedule continuation | Fitness result |
+| --- | --- |
+| ![Generated schedule details](extras/working-ss-3.jpg) | ![Final fitness result](extras/working-ss-4.jpg) |
+
+## Contributors
+
 - [Sameet Asadullah](https://github.com/SameetAsadullah)
 - [Aysha Noor](https://github.com/ayshanoorr)
+
+## License
+
+Licensed under the [MIT License](LICENSE).
