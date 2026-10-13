@@ -19,4 +19,4 @@ The timetable is represented as a chromosome with one gene per course. Each exam
 - Invigilator scheduling should avoid consecutive assignments.
 - Management courses should precede computer-science courses where applicable.
 
-The original project statement and report provide the full academic specification and evaluation.
+The original project statement and report provide the complete constraint specification and evaluation.

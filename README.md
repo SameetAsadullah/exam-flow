@@ -7,7 +7,7 @@ A constraint-based university exam scheduler implemented in Python. The project 
 ![Checks](https://github.com/SameetAsadullah/genetic-exam-scheduler/actions/workflows/quality.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-## What it demonstrates
+## Implemented capabilities
 
 - Chromosome-based timetable representation.
 - Random population generation from real CSV inputs.
