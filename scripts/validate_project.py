@@ -7,25 +7,26 @@ import json
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "src"
+DATA = ROOT / "data"
+NOTEBOOKS = ROOT / "notebooks"
 
 
 def rows(name: str) -> list[list[str]]:
-    with (SOURCE / name).open(newline="", encoding="utf-8-sig") as handle:
+    with (DATA / name).open(newline="", encoding="utf-8-sig") as handle:
         return [row for row in csv.reader(handle) if row]
 
 
 def main() -> None:
-    notebook_path = SOURCE / "main.ipynb"
+    notebook_path = NOTEBOOKS / "exam-scheduler.ipynb"
     notebook = json.loads(notebook_path.read_text(encoding="utf-8"))
     code_cells = [cell for cell in notebook["cells"] if cell["cell_type"] == "code"]
     for number, cell in enumerate(code_cells, start=1):
-        compile("".join(cell["source"]), f"main.ipynb:cell-{number}", "exec")
+        compile("".join(cell["source"]), f"exam-scheduler.ipynb:cell-{number}", "exec")
 
     courses = rows("courses.csv")
     teachers = rows("teachers.csv")
-    students = rows("studentNames.csv")
-    registrations = rows("studentCourse.csv")
+    students = rows("students.csv")
+    registrations = rows("student-courses.csv")
     if registrations and registrations[0][1:] == ["Student Name", "Course Code"]:
         registrations = registrations[1:]
     course_codes = {row[0] for row in courses}

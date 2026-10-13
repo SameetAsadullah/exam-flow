@@ -17,7 +17,7 @@ A constraint-based university exam scheduler implemented in Python. The project 
 - Multi-room allocation based on enrollment size.
 - Human-readable output of the best discovered timetable.
 
-See [Algorithm design](docs/ALGORITHM.md) for the search model. The supporting [problem specification](Project%20Statement.pdf) and [report](Report.pdf) are also available.
+See [Algorithm design](docs/ALGORITHM.md) for the search model. The supporting [problem specification](docs/problem-specification.pdf) and [project report](docs/project-report.pdf) are also available.
 
 ## Scheduling constraints
 
@@ -39,14 +39,14 @@ See [Algorithm design](docs/ALGORITHM.md) for the search model. The supporting [
 
 ## Dataset
 
-The `src` directory contains the notebook and its inputs:
+The `data` directory contains the scheduling inputs, while the executable analysis is in `notebooks/exam-scheduler.ipynb`:
 
 | File | Purpose |
 | --- | --- |
 | `courses.csv` | Course codes and names |
 | `teachers.csv` | Available invigilators |
-| `studentNames.csv` | Student records |
-| `studentCourse.csv` | Course registrations |
+| `students.csv` | Student records |
+| `student-courses.csv` | Course registrations |
 
 ## Run locally
 
@@ -54,8 +54,7 @@ The `src` directory contains the notebook and its inputs:
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-cd src
-jupyter lab main.ipynb
+jupyter lab notebooks/exam-scheduler.ipynb
 ```
 
 Run the notebook cells in order. The algorithm is stochastic, so convergence time and the resulting timetable can differ between executions.
