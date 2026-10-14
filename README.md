@@ -1,10 +1,10 @@
-# Exam Timetable Generator using a Genetic Algorithm
+# Exam Flow: Genetic Exam Scheduling
 
 A constraint-based university exam scheduler implemented in Python. The project evolves candidate timetables against student, room, invigilator, and ordering constraints using selection, crossover, mutation, and fitness scoring.
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/interface-Jupyter-F37626?logo=jupyter&logoColor=white)
-![Checks](https://github.com/SameetAsadullah/genetic-exam-scheduler/actions/workflows/quality.yml/badge.svg)
+![Checks](https://github.com/SameetAsadullah/exam-flow/actions/workflows/quality.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 ## Implemented capabilities
